@@ -1,0 +1,80 @@
+*{
+	box-sizing: border-box
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	background: #d9d9d9;
+}
+
+#log {
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 100vh;
+	width: 30%;
+	text-align: left;
+	background: #cccccc;
+	font-family: 'Press Start 2P', cursive;
+}
+
+#log header{
+	background: black;
+	padding: 10px;
+	text-align: center;
+	font-size: 32;
+	color: white;
+	height: 6vh;
+}
+
+#loglist{
+	text-align: left;
+	padding: 10px;
+	overflow-y: auto;
+	height: 73vh;
+}
+
+#status div {
+	text-align: left;
+	padding: 10px;
+}
+
+#status{
+	text-align: left;
+	padding: 10px;
+	user-select: none;
+	height: 14vh;
+	overflow-y: auto;
+}
+
+#status summary:focus {
+	outline: none;
+}
+
+#loglist div {
+	text-align: left;
+	padding: 10px;
+}
+
+#loglist div:not(:last-child){
+	border-bottom: 1px solid gray;
+}
+
+canvas{
+	position: absolute;
+	left:0;
+	width: 70%;
+	height: 100vh;
+}
+
+details{
+	padding-top: 10px;
+}
+
+#inventory div.equipped{
+	color: red;
+}
